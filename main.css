@@ -1,11 +1,28 @@
-div {
-  border: 20px solid #000; /* this is short hand for setting
-                            the border's width, its type, and color */
-  display: inline-block; /* a way of positioning elements */
-  min-width: 20em; /* the two min styles make the shape */
-  min-height: 25em; /* of the divs oblong*/
-  border-radius: 50%; /* this makes the normally square div round */
-  border-left-color: transparent; /* these remove the color from the left side */
-  border-right-color: transparent; /* the right side */
-  border-bottom-color: transparent; /* and the bottom of the circle */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: lightblue; /* Sky background */
 }
+
+div {
+  border: 20px solid;
+  display: inline-block;
+  min-width: 20em;
+  min-height: 25em;
+  border-radius: 50%;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  position: absolute;
+}
+
+/* Rainbow colors for nested divs */
+div:nth-child(1) { border-top-color: red; min-width: 22em; min-height: 27em; }
+div:nth-child(2) { border-top-color: orange; min-width: 20em; min-height: 25em; }
+div:nth-child(3) { border-top-color: yellow; min-width: 18em; min-height: 23em; }
+div:nth-child(4) { border-top-color: green; min-width: 16em; min-height: 21em; }
+div:nth-child(5) { border-top-color: blue; min-width: 14em; min-height: 19em; }
+div:nth-child(6) { border-top-color: indigo; min-width: 12em; min-height: 17em; }
+div:nth-child(7) { border-top-color: violet; min-width: 10em; min-height: 15em; }
