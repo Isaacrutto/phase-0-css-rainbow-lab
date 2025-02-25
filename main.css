@@ -1,13 +1,5 @@
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: lightblue; /* Sky background */
-}
-
 div {
-  border: 20px solid;
+  border: 20px solid #000;
   display: inline-block;
   min-width: 20em;
   min-height: 25em;
@@ -15,14 +7,32 @@ div {
   border-left-color: transparent;
   border-right-color: transparent;
   border-bottom-color: transparent;
-  position: absolute;
 }
 
-/* Rainbow colors for nested divs */
-div:nth-child(1) { border-top-color: red; min-width: 22em; min-height: 27em; }
-div:nth-child(2) { border-top-color: orange; min-width: 20em; min-height: 25em; }
-div:nth-child(3) { border-top-color: yellow; min-width: 18em; min-height: 23em; }
-div:nth-child(4) { border-top-color: green; min-width: 16em; min-height: 21em; }
-div:nth-child(5) { border-top-color: blue; min-width: 14em; min-height: 19em; }
-div:nth-child(6) { border-top-color: indigo; min-width: 12em; min-height: 17em; }
-div:nth-child(7) { border-top-color: violet; min-width: 10em; min-height: 15em; }
+#red {
+  border-top-color: #f00;
+}
+
+#orange {
+  border-top-color: #ffa500;
+}
+
+#yellow {
+  border-top-color: #ff0;
+}
+
+#green {
+  border-top-color: #00bc3f;
+}
+
+#blue {
+  border-top-color: #06f;
+}
+
+#indigo {
+  border-top-color: #8a2be2;
+}
+
+#violet {
+  border-top-color: #d300c9;
+}
